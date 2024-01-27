@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTICLE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+    /* Mode Terang */
+    body.light-mode {
+        background-color: #fff;
+        color: #333;
+    }
+    
+        /* Mode Gelap */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .sun6{
+            float: right;
+            padding-right: 20px;
+            margin-top: 10px;
+            font-size: 25px;
+        }
+  
+.container-article {
+    width: 700px;
+    height: 1000px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    overflow: hidden; /* Menghindari overflow saat navbar muncul */
+    position: relative; /* Menentukan posisi relatif untuk konten dalam card */
+    background: linear-gradient(to right, transparent 50%, rgb(252, 141, 141) 50%);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Opsional, membuat latar belakang tetap ketika digulir */
+    
+}
+.bgatas-index{
+    width: 100%;
+    background-size: cover;
+}
+
+
+.grub-article{
+    margin-left: 10px;
+    margin-top: -150px;
+}
+.grub-foto-art{
+    display: flex;
+    align-items: center; /* Menengahkan secara vertikal */
+    margin-left: 50px;
+    margin-top: 100px;
+}
+.grub-foto-art2{
+    display: flex;
+    margin-left: 50px;
+    margin-top: -60px;
+    margin-bottom: 0px;
+}
+
+
+
+.foto-article{
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-top: 100px;
+    margin-left: 0px;
+    border-radius: 50%;
+    border:6px solid #222121;
+    z-index: 2;
+}
+.foto-article2{
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    margin-top: 100px;
+    margin-left: 0px;
+    border-radius: 50%;
+    border:6px solid #222121;
+    z-index: 2;
+}
+
+.grub-teks-article{
+    width: 300px;
+    border:4px solid #222121;
+    border-radius: 70px;
+    background-color: #a1a1a1;
+    color: #fffdfd;
+    padding-right: 40px;
+    padding-left: 210px;
+    padding-bottom: 30px;
+    margin-top: 120px;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.grub-teks-article2{
+    width: 300px;
+    border:4px solid #222121;
+    border-radius: 70px;
+    background-color: #a1a1a1;
+    color: #fffdfd;
+    padding-right: 40px;
+    padding-left: 210px;
+    padding-bottom: 30px;
+    margin-top: 120px;
+    margin-left: 40px;
+    z-index: 1;
+}
+
+.teks-article{
+    font-size: 15px;
+    padding-right: 20px;
+}
+.teks-article2{
+    font-size: 10px;
+}
+
+hr{
+    color: #222121;
+    width: auto;
+}
+
+.selanjutnya{
+    margin-top: 30px;
+    margin-left: 37%;
+    height: 50px;
+}
+.teks-sel{
+    background-color: #3f4041; /* Atur warna latar belakang sesuai keinginan Anda */
+    color: #ffffff; /* Atur warna teks agar terlihat dengan kontras */
+    padding: 5px 5px; /* Atur padding untuk memberikan ruang di sekitar teks */
+    border-radius: 30px 30px ; /* Lengkungan sudut kiri (top-left dan bottom-left) dan sudut kanan (top-right dan bottom-right) */
+    margin: 10px; 
+    margin-top: 10px;
+    width: 190px;
+    font-size: 22px; /* Mengatur ukuran teks menjadi 24 piksel */
+    text-align: center;
+    z-index: 2;
+}
+.bsel{
+    margin-left: 10px;
+}
+
+.var-bg-articel{
+    position: absolute;
+    width: 50%;
+    height: auto;
+    margin-top: 30%;
+    margin-left: 50%;
+}
+.var-kiri-article{
+    position: absolute;
+    width: 250px;
+    top: 77%;
+    right: 500px;
+}
+@media(max-width: 690px){
+    .grub-article{
+        width: 50px;
+    }
+    .foto-article{
+        width: 200px;
+        height: auto;       
+    }
+
+    .grub-teks-article{
+        width: 280px;
+        height: auto;
+    }
+    .teks-article{
+        width: 270px;
+        font-size: 10px;
+        padding-right: 20px;
+    }
+    .teks-sel{
+        margin-left: 250px;
+        font-size: 21px;
+    }
+    
+}
+@media(max-width: 670px){
+    .grub-article{
+        width: 40px;
+    }
+    .foto-article{
+        width: 180px;
+        height: auto;       
+    }
+    .foto-article2{
+        width: 180px;
+        height: auto;       
+    }
+    .grub-teks-article{
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+    }
+    .grub-teks-article2{
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+    }
+    .teks-article{
+        width: 220px;
+        font-size: 8px;
+        padding-right: 18px;
+        margin-left: 00px;
+    }
+    .teks-article2{
+        width: 220px;
+        font-size: 8px;
+        padding-right: 18px;
+        margin-left: 00px;
+    }
+    .teks-sel{
+        margin-left: 210px;
+        font-size: 20px;
+    }
+}
+@media(max-width: 600px){
+    .grub-article{
+        width: 40px;
+    }
+    .foto-article{
+        width: 150px;
+        height: auto;       
+    }
+    .foto-article2{
+        width: 150px;
+        height: auto;       
+    }
+    .grub-teks-article{
+        width: 180px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 170px;
+        padding-bottom: 15px;
+    }
+    .grub-teks-article2{
+        width: 180px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 170px;
+        padding-bottom: 15px;
+        margin-top: 100px;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 9px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 9px;
+        padding-right: 16px;
+    }
+    .teks-sel{
+        margin-left: 190px;
+        font-size: 18px;
+    }
+}
+@media(max-width: 490px){
+    .grub-article{
+        margin-left: -10px;
+    }
+    .foto-article{
+        width: 150px;
+        height: auto;       
+    }
+    .foto-article2{
+        width: 150px;
+        height: auto;   
+        margin-top: 90px;    
+    }
+    .grub-teks-article{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 150px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+    }
+    .grub-teks-article2{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 150px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+        margin-top: 100px;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 8px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 8px;
+        padding-right: 16px;
+    }
+    .teks-sel{
+        margin-left: 170px;
+        padding: 3px ;
+        font-size: 15px;
+        width: 1
+        50px;
+    }
+    .var-bg-articel{
+        width: 45%;
+        height: auto;
+        margin-top: 50%;
+        margin-left: 58%;
+    }
+}
+@media(max-width: 450px){
+    .grub-article{
+        margin-left: -20px;
+    }
+    .foto-article{
+        width: 150px;
+        height: auto;       
+    }
+    .foto-article2{
+        width: 150px;
+        height: auto;   
+        margin-top: 90px;    
+    }
+    .grub-teks-article{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 150px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+    }
+    .grub-teks-article2{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 150px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+        margin-top: 100px;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 8px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 8px;
+        padding-right: 16px;
+    }
+    .var-bg-articel{
+        width: 45%;
+        height: auto;
+        margin-top: 50%;
+        margin-left: 60%;
+    }
+}
+@media(max-width: 430px){
+    .grub-article{
+        margin-left: -20px;
+    }
+    .foto-article{
+        width: 130px;
+        height: auto;
+        border: 3px solid black;       
+    }
+    .foto-article2{
+        width: 130px;
+        height: auto;   
+        border: 3px solid black;
+        margin-top: 80px;    
+    }
+    .grub-teks-article{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 125px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+        border: 2px solid black;
+    }
+    .grub-teks-article2{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 125px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+        margin-top: 90px;
+        border: 2px solid black;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 7px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 7px;
+        padding-right: 16px;
+    }
+}
+@media(max-width: 410px){
+    .grub-article{
+        margin-left: -30px;
+    }
+    .foto-article{
+        width: 130px;
+        height: auto;
+        border: 3px solid black;       
+    }
+    .foto-article2{
+        width: 130px;
+        height: auto;   
+        border: 3px solid black;
+        margin-top: 80px;    
+    }
+    .grub-teks-article{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 125px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+        border: 2px solid black;
+    }
+    .grub-teks-article2{
+        width: 150px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 125px;
+        padding-right: 70px;
+        padding-bottom: 15px;
+        margin-top: 90px;
+        border: 2px solid black;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 7px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 7px;
+        padding-right: 16px;
+    }
+    .var-bg-articel{
+        width: 45%;
+        height: auto;
+        margin-top: 50%;
+        margin-left: 64%;
+    }
+}
+@media(max-width: 400px){
+    .grub-article{
+        margin-left: -30px;
+    }
+    .foto-article{
+        width: 110px;
+        height: auto;
+        border: 3px solid black;       
+    }
+    .foto-article2{
+        width: 110px;
+        height: auto;   
+        border: 3px solid black;
+        margin-top: 70px;    
+    }
+    .grub-teks-article{
+        width: 130px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 115px;
+        padding-right: 80px;
+        padding-bottom: 15px;
+        border: 2px solid black;
+    }
+    .grub-teks-article2{
+        width: 130px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 115px;
+        padding-right: 80px;
+        padding-bottom: 15px;
+        margin-top: 70px;
+        border: 2px solid black;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 7px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 7px;
+        padding-right: 16px;
+    }
+    .teks-sel{
+        margin-left: 140px;
+        padding: 3px ;
+        font-size: 12px;
+        width: 130px;
+    }
+}
+@media(max-width: 360px){
+    .grub-article{
+        margin-left: -30px;
+    }
+    .foto-article{
+        width: 110px;
+        height: auto;
+        border: 3px solid black;       
+    }
+    .foto-article2{
+        width: 110px;
+        height: auto;   
+        border: 3px solid black;
+        margin-top: 65px;    
+    }
+    .grub-teks-article{
+        width: 115px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 110px;
+        padding-right: 80px;
+        padding-bottom: 15px;
+        border: 2px solid black;
+    }
+    .grub-teks-article2{
+        width: 115px;
+        height: auto;
+        margin-left: 0pxp;
+        padding-left: 110px;
+        padding-right: 80px;
+        padding-bottom: 15px;
+        margin-top: 70px;
+        border: 2px solid black;
+    }
+    .teks-article{
+        width: 200px;
+        font-size: 6px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .teks-article2{
+        width: 200px;
+        font-size: 6px;
+        padding-right: 16px;
+    }
+    .teks-sel{
+        margin-left: 150px;
+        padding: 3px ;
+        font-size: 10px;
+        width: 100px;
+    }
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container-article">
+        <div class="icon-container">
+            <img src="article/sidebar.svg" alt="burger" class="burger-icon-product" id="burgerButton">
+            <i class="bi bi-brightness-high-fill dark-mode-toggle" id="darkModeToggle"></i>
+            <i class="bi bi-search"></i>
+            <i class="bi bi-three-dots-vertical"></i>
+        </div>
+       <div class="overlay" id="overlay"></div>
+        <div class="nav-content">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="profil.html">Profil</a></li>
+                <li class="nav-item"><a href="product.html">Product</a></li>
+                <li class="nav-item"><a href="galery.html">Galery</a></li>
+                <li class="nav-item"><a href="article.html">Article</a></li>
+                <li class="nav-item"><a href="contack.html">Contack</a></li>
+            </ul>
+            <div class="icon-navbar-sosmed">
+                <center>
+                <i class="bi fb bi-facebook"></i>      
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>   
+                <i class="bi bi-instagram"></i>   
+                <i class="bi bi-youtube"></i>  
+            </center>
+            </div>
+        <div class="grub-article">
+
+            <img src="article/setling.svg" alt="" class="var-bg-articel">
+
+            <div class="grub-foto-art">
+
+                <img src="article/cod.svg" alt="" class="foto-article">
+                <h1 class="grub-teks-article">
+                    <p class="teks-article">CALL OF DUTY|GAME|PERANG COD|MULTIPLAYER|STRATEGI</b></p><hr>
+                    <p class="teks-article2">Siapkan senapanmu dan rasakan aksi perang yang tak 
+                        terlupakan dalam salah satu game tembak-tembakan terbaik 
+                        sepanjang masa, Call Of Duty. Bergabunglah dalam pertempuran
+                         penuh adrenalin, tantangan, dan emosi yang menguji
+                          keterampilanmu sebagai prajurit tangguh</p>
+                </h1>
+                
+            </div>
+
+            <div class="grub-foto-art2">
+
+                <img src="article/cod.svg" alt="" class="foto-article2">
+                <h1 class="grub-teks-article2">
+                    <p class="teks-article">CALL OF DUTY|GAME|PERANG COD|MULTIPLAYER|STRATEGI</b></p><hr>
+                    <p class="teks-article2">Siapkan senapanmu dan rasakan aksi perang yang tak 
+                        terlupakan dalam salah satu game tembak-tembakan terbaik 
+                        sepanjang masa, Call Of Duty. Bergabunglah dalam pertempuran
+                         penuh adrenalin, tantangan, dan emosi yang menguji
+                          keterampilanmu sebagai prajurit tangguh</p>
+                </h1>
+
+            </div>
+
+            <div class="grub-foto-art2">
+
+                <img src="article/cod.svg" alt="" class="foto-article2">
+                <h1 class="grub-teks-article2">
+                    <p class="teks-article">CALL OF DUTY|GAME|PERANG COD|MULTIPLAYER|STRATEGI</b></p><hr>
+                    <p class="teks-article2">Siapkan senapanmu dan rasakan aksi perang yang tak 
+                        terlupakan dalam salah satu game tembak-tembakan terbaik 
+                        sepanjang masa, Call Of Duty. Bergabunglah dalam pertempuran
+                         penuh adrenalin, tantangan, dan emosi yang menguji
+                          keterampilanmu sebagai prajurit tangguh</p>
+                </h1>
+
+            </div>
+
+            <div class="grub-foto-art2">
+
+                <img src="article/cod.svg" alt="" class="foto-article2">
+                <h1 class="grub-teks-article2">
+                    <p class="teks-article">CALL OF DUTY|GAME|PERANG COD|MULTIPLAYER|STRATEGI</b></p><hr>
+                    <p class="teks-article2">Siapkan senapanmu dan rasakan aksi perang yang tak 
+                        terlupakan dalam salah satu game tembak-tembakan terbaik 
+                        sepanjang masa, Call Of Duty. Bergabunglah dalam pertempuran
+                         penuh adrenalin, tantangan, dan emosi yang menguji
+                          keterampilanmu sebagai prajurit tangguh</p>
+                </h1>
+
+            </div>
+
+            <img src="article/var-kiri-article.svg" alt="" class="var-kiri-article">
+            <div class="selanjutnya">
+                <p class="teks-sel"><i class="bi bi-arrow-repeat"></i><b class="bsel">selanjutnya</b></p>
+            </div>
+            
+           
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

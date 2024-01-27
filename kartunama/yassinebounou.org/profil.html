@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .garis-vertikal-left {
+    border-left: 2px solid #00A9DF; /* Warna dan ketebalan garis sesuai kebutuhan */
+    height: 100%; /* Tinggi garis vertikal (sesuaikan dengan tinggi yang diinginkan) */
+    margin-left: 30px;
+  }
+.icon-titik-profil{
+    font-size: 12px;
+    padding-right: 10px;
+}
+
+
+.teks-smp{
+    color: #685FFF;
+    font-size: 16px;
+    margin: 5px;
+    margin-left: -7px;
+    font-family: 'Century Gothic', sans-serif;
+}
+.teks-jurusan{
+    color: #000000e7;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-top: 0px;
+    font-family: 'Century Gothic', sans-serif;
+}
+    .bg-smp {
+        position: relative;
+        background-color: #00A9DF;
+        color: #5046F0;
+        padding: 10px 15px;
+        padding-right: 30px;
+        margin: 10px;
+        margin-top: 10px;
+        display: inline-block;
+        font-size: 20px;
+        clip-path: polygon(0 0, 93% 0, 100% 50%, 93% 100%, 0 100%);
+        border: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    .bg-smp::after {
+        content: '';
+        position: absolute;
+        inset: 2px 2px;
+        clip-path: inherit;
+        background-color: #ffffff;
+        z-index: -1;
+    }
+.bg-kerja {
+    background-color: #ffffff; /* Atur warna latar belakang sesuai keinginan Anda */
+    color: #fa0000e7; /* Atur warna teks agar terlihat dengan kontras */
+    padding: 10px 15px; /* Atur padding untuk memberikan ruang di sekitar teks */
+    border:3px solid #000000 ;
+    border-radius: 0 30px 30px 0; /* Lengkungan sudut kiri (top-left dan bottom-left) dan sudut kanan (top-right dan bottom-right) */
+    margin: 10px; 
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    font-size: 20px; /* Mengatur ukuran teks menjadi 24 piksel */
+       
+}
+.dark-mode .bg-smp::after{
+    background-color: #333;
+}
+.dark-mode .icontext{
+    color: aqua;
+}
+.dark-mode .boxx{
+    background-color: #241e7e;
+}
+.dark-mode .box{
+    background-color: #241e7e;
+}
+.tahun-smp{
+    margin-left: 4px;
+}
+.box{
+    width: 100%;
+    height: 50px;
+    background-color: #007EA6;
+    margin-bottom: -60px;
+}
+.boxx{
+    width: 100%;
+    height: 50px;
+    background-color: #007EA6;
+    bottom: 0;
+    margin-bottom: -10px;
+}
+.dark-mode-toggle{
+    margin-left: 250px;
+    margin-top: -5px;
+}
+    </style>
+</head>
+<body>
+    <div class="container-profil">
+        <div class="column left">
+            <div class="box"></div>
+            <img src="index/sidebar.svg" alt="burger" class="burger-icon" id="burgerButton">
+            <i class="bi bi-brightness-high-fill dark-mode-toggle"  id="mode-toggle"></i>   
+            <div class="overlay" id="overlay"></div>
+            <div class="nav-content">
+            <center>
+            <img src="index/logoy3.svg" alt="logoy3" class="navbar-y3">
+            <img src="index/text-yassinobourg.svg" alt="text-yasinobougr" class="navbar-text-yasinobougr">
+            </center><br>
+            <div class="isi-nav">
+                <div class="nav-item"><a href="index.html"><i class="bi bi-house"></i> Home</a></div>
+                <div class="nav-item"><a href="profil.html"><i class="bi bi-person"></i> Profil</a></div>
+                <div class="nav-item"><a href="product.html"><i class="bi bi-cart"></i> Product</a></div>
+                <div class="nav-item"><a href="galery.html"><i class="bi bi-card-image"></i> Galery</a></div>
+                <div class="nav-item"><a href="article.html"><i class="bi bi-card-text"></i> Article</a></div>
+                <div class="nav-item bawah"><a href="contack.html"><i class="bi bi-person-lines-fill"></i> Contact</a></div>
+            </div>
+        </div>  
+            <div class="content-profil-kiri">
+            <div class="profile-picture-profil">
+                <img src="product/gambar1.svg" alt="Profile Picture" class="poto-profile">
+            </div>
+                <span class="icontext"><i class="bi bi-info-circle-fill"></i> About</span>
+                <p class="text-1">Javawebster adalah Industri Kreatif yang berperan sebagai sarana untuk membuat, mengelola dan mengembangkan Teknologi Informasi Digital Dan Multimedia Interaktif</p>
+                <span class="icontext"><i class="bi bi-person-fill"></i> Profil</span>
+                <table class="my-table">
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>: Elliot J.Q</td>
+                        </tr>
+                        <tr>
+                            <td>Username</td>
+                            <td>: @Elliot</td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td>: Pandaan</td>
+                        </tr>
+                        <tr>
+                            <td>Telephone</td>
+                            <td>: +62-857-9534-3099</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>: Unknow</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>: Pandaan, Jawa Timur-Indonesia</td>
+                        </tr>
+                        <tr>
+                            <td>Hobby</td>
+                            <td>: Playing games</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span class="icontext"><i class="bi bi-gear"></i></i> Our Service</span><br><br>
+                <span class="icontext"><i class="bi bi-android2"></i> Android Application</span>
+                <p class="text-2">Javawebster media</p>
+                <span class="icontext"><i class="bi bi-browser-chrome"></i> Website</span>
+                <p class="text-2">Javawebster media</p>
+                <span class="icontext"><i class="bi bi-brush-fill"></i> UI/UX Desaign</span>
+                <p class="text-2">Javawebster media</p>
+            </div>
+            <footer class="credit-section">
+                <p>&copy; Tugas from Mas Rigen & design from Mas Rio</p>
+            </footer>
+            <div class="boxx"></div>
+        </div>
+        <div class="column right">
+            <div class="content-profil-kanan">
+            <center><img src="profil/education.svg" alt="education" class="education-profil"></center>
+            <div class="tahun-smp garis-vertikal-left">
+                <p class="bg-smp"><b>2007-2009</b> </p>            
+                <p class="teks-smp"><i class="bi bi-circle-fill icon-titik-profil "></i><b>SMP NEGERI 1 PANDAAN</b></p>
+                
+                <p class="bg-smp"><b>2010-2012</b> </p>            
+                <p class="teks-smp"><b><i class="bi bi-circle-fill icon-titik-profil "></i>SMK NEGERI 1 GEMPOL</b></p>
+                <p class="teks-jurusan">TEKNIK KOMPUTER JARINGAN</p>
+                
+                <p class="bg-smp"><b>2010-2012</b> </p>
+                <p class="teks-smp"><b><i class="bi bi-circle-fill icon-titik-profil "></i>UNIVERSITAS KANJURUHAN MALANG</b></p>
+                <p class="teks-jurusan">TEKNIK INFORMATIKA</p>
+            </div>  <br> 
+            <center><img src="profil/workexperience.svg" alt="education" class="education-profil"></center>   
+            <div class="tahun-smp garis-vertikal-left">
+                <p class="bg-smp"><b>Okt 2019 - Okt 2020</b> </p>               
+                <p class="teks-smp"><i class="bi bi-circle-fill icon-titik-profil "></i><b>PT. GIJUTSU MASAGI INDONESIA</b></p>
+                <p class="teks-jurusan">Supervisor & IT</p>
+
+                <p class="bg-smp"><b>Nov 2020 - Des 2022</b> </p>            
+                <p class="teks-smp"><b><i class="bi bi-circle-fill icon-titik-profil "></i>PT. BITNIAGA CIPTA GEMILANG</b></p>
+                <p class="teks-jurusan">Anggota Pemasaran Wifi (Wirausaha)</p>
+                
+                <p class="bg-smp"><b>Okt 2015 - Sekarang</b> </p>
+                <p class="teks-smp"><b><i class="bi bi-circle-fill icon-titik-profil "></i>IKKILO CREATIVE TEAM</b></p>
+                <p class="teks-jurusan">Freelancer</p>
+            </div><br>
+            <center><img src="profil/personalskill.svg" alt="education" class="education-profil"></center>
+            <table class="tf">
+                <tbody>
+                    <tr>
+                        <td class="teball"><p>UI/UX Design</p></td>
+                        <td class="lebarr">
+                            <div class="container-skil">
+                            <div class="skills uiux"></div>
+                            </div>
+                        </td>
+                        <td class="teball">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="teball">3D</td>
+                        <td>
+                            <div class="container-skil">
+                            <div class="skills d"></div>
+                            </div>
+                        </td>
+                        <td class="teball">85%</td>
+                    </tr>
+                    <tr>
+                        <td class="teball"><p>Website</p></td>
+                        <td>
+                            <div class="container-skil">
+                            <div class="skills website"></div>
+                            </div>
+                        </td>
+                        <td class="teball">80%</td>
+                    </tr>
+                    <tr>
+                        <td class="teball">Multimedia</td>
+                        <td>
+                            <div class="container-skil">
+                            <div class="skills multimedia"></div>
+                            </div>
+                        </td>
+                        <td class="teball">78%</td>
+                    </tr>
+                    <tr>
+                        <td class="teball"><p>Networking</p></td>
+                        <td>
+                            <div class="container-skil">
+                            <div class="skills networking"></div>
+                            </div>
+                        </td>
+                        <td class="teball">70%</td>
+                    </tr>
+                    <tr>
+                        <td class="teball">Digital Marketing</td>
+                        <td>
+                            <div class="container-skil">
+                            <div class="skills digitalmarketing"></div>
+                            </div>
+                        </td>
+                        <td class="teball">65%</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
