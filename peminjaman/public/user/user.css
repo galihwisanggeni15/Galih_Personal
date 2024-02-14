@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap");
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #eaeaea;
+}
+nav {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav .jd {
+    font-family: "Protest Riot", sans-serif;
+    font-size: 20px;
+    color: white;
+    transition: all 0.5s;
+}
+nav .jd:hover {
+    transform: scale(1.2);
+}
+nav .list {
+    display: flex;
+    gap: 20px;
+}
+nav .list a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+nav .list a:hover {
+    color: rgb(172, 171, 171);
+}
+nav .list .btn a {
+    background-color: red;
+    padding: 5px 7px;
+    border-radius: 10px;
+    align-items: center;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+nav .list .btn a:hover {
+    background-color: rgb(168, 0, 0);
+}
+nav .hb {
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+@media screen and (max-width: 770px) {
+    nav .list {
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 590px) {
+    nav {
+        justify-content: space-between;
+    }
+    nav .hb {
+        display: block;
+    }
+    nav .list {
+        display: none;
+    }
+
+    nav .list.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 67px;
+        background-color: gray;
+        height: 75vh;
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+}
+
+/* Container Index */
+.container-index {
+    padding: 40px 10%;
+}
+.container-index h1 {
+    padding: 20px 0;
+    font-size: 40px;
+}
+.container-index .container-barang {
+    padding: 0 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-index .container-barang .card {
+    background-color: white;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 7px;
+    width: auto;
+    margin: 10px;
+}
+.container-index .container-barang .card .text {
+    padding: 10px;
+}
+.container-index .container-barang .card .text a {
+    text-decoration: none;
+    background-color: rgb(0, 197, 0);
+    padding: 8px 11px;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.container-index .container-barang .card .text a:hover {
+    border-radius: 15px;
+    background-color: rgb(0, 141, 0);
+}
+
+/* Container detail */
+.container-detail {
+    padding: 40px 10%;
+}
+.container-detail .card {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin: 15px 0;
+}
+.container-detail .card .kiri {
+    width: 35%;
+    order: 1;
+}
+.container-detail .card .kanan {
+    width: 65%;
+    padding: 0 20px;
+    border: 1px solid black;
+    margin: 5px;
+    order: 2;
+}
+@media screen and (max-width: 430px) {
+    .container-detail .card {
+        display: flex;
+        background-color: white;
+        flex-direction: column;
+        padding: 10px;
+        margin: 15px 0;
+    }
+}
+.container-detail .card .kanan form .form-group {
+    padding: 5px 0;
+}
+.container-detail .card .kanan form .form-group label {
+    font-size: 17px;
+}
+.container-detail .card .kanan form .form-group input:read-only {
+    background-color: rgb(192, 192, 192);
+}
+.container-detail .card .kanan form .form-group input {
+    width: 100%;
+    margin: 3px 0;
+    outline: none;
+    padding: 7px 5px;
+    height: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.container-detail .card .kanan form .form-group select {
+    width: 100%;
+    outline: none;
+    padding: 7px 5px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+.container-detail .card .kanan form button {
+    margin: 10px;
+    padding: 10px 13px;
+    border: 1px solid black;
+    background-color: rgb(4, 121, 4);
+    color: white;
+    transition: all 0.5s;
+    border-radius: 15px;
+}
+.container-detail .card .kanan form button:hover {
+    border-radius: 20px;
+    background-color: rgb(1, 90, 1);
+}
+
+/* Container Index */
+.container-index {
+    padding: 20px;
+}
+
+/* Container Barang  */
+.container-pinjam {
+    padding: 20px;
+}
+.container-pinjam .card {
+    padding: 20px;
+}
+.container-pinjam .card table tbody .editbarang:hover {
+    border-radius: 12px;
+}
+.container-pinjam .card table tbody .editbarang {
+    background-color: rgb(233, 233, 0);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border: none;
+    transition: all 0.5s;
+}
+.container-pinjam .card .tambahdatabtn {
+    padding: 10px 14px;
+    background-color: rgb(0, 214, 0);
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+.container-pinjam .card .tambahdatabtn:hover {
+    background-color: rgb(1, 134, 1);
+}
+.container-pinjam .card table {
+    width: 100%;
+    margin: 40px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-collapse: collapse; /* menambahkan properti untuk membuat border hanya satu piksel */
+}
+
+.container-pinjam .card table th,
+.container-pinjam .card table td {
+    border: 1px solid black; /* menambahkan border dengan ketebalan 1 piksel */
+    padding: 8px; /* memberikan padding agar konten tidak terlalu dekat dengan border */
+}
+/* Style untuk membuat tabel responsif */
+.table-container {
+    overflow-x: auto; /* Membuat tabel digulir secara horizontal saat ukuran layar lebih kecil */
+}
+
+/* Style untuk mengatur lebar kolom pada layar kecil */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
+/* Container Tambah Barang */
+.container-tambah {
+    padding: 20px;
+}
+.container-tambah .card {
+    padding: 20px;
+}
+.container-tambah .card .container-form {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid black;
+    background-color: white;
+}
+.container-tambah .card .container-form form .form-group {
+    padding: 20px 10px;
+}
+.container-tambah .card .container-form form .form-group input {
+    width: 100%;
+    height: 30px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container-tambah .card .container-form form .form-group textarea {
+    width: 100%;
+    height: 100px;
+    outline: none;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.container-tambah .card .container-form form button {
+    margin: 20px 10px;
+    padding: 10px 15px;
+    background-color: rgb(5, 199, 5);
+    color: white;
+    border: 1px solid #eaeaea;
+    transition: all 0.5s;
+}
+.container-tambah .card .container-form form button:hover {
+    background-color: rgb(5, 151, 5);
+    border-radius: 15px;
+}
