@@ -1,0 +1,602 @@
+:root {
+  --buttonroket: #7263ac;
+  --hoverbuttonroket: #3f3469;
+  --buttontelephone: #e0d6f3;
+  --hoverbuttontelephonet: #b2acbd;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Change background color as needed */
+  z-index: 1000; /* Adjust z-index as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for visual effect */
+}
+nav {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  transition: all 0.5s;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+nav .logo span {
+  color: #7263ac;
+  font-weight: bold;
+  padding: 0 10px;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+}
+nav .button {
+  margin-right: 30px;
+}
+nav .button .kontak {
+  margin-right: 20px;
+}
+nav .button .kontak button i {
+  margin-right: 5px;
+  transition: all 0.5s;
+}
+nav .button .kontak button:hover > i {
+  transform: scale(1.1);
+}
+nav .button .lomba button:hover > i {
+  transform: translate(5px, -5px);
+}
+
+nav .button .lomba button i {
+  margin-right: 5px;
+  transition: all 0.5s;
+}
+nav .button .kontak button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #7263ac;
+  background-color: var(--buttontelephone);
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+nav .button .kontak button:hover {
+  color: #7263ac;
+  background-color: var(--hoverbuttontelephonet);
+}
+nav .button .lomba button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color: var(--buttonroket);
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+nav .button .lomba button:hover {
+  background-color: var(--hoverbuttonroket);
+  color: #ffffff;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+
+.btntengah {
+  padding: 30px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btntengah .vidio button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color: #e0d6f3;
+  border: none;
+  color: #7263ac;
+  margin-right: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btntengah .vidio button:hover {
+  background-color: var(--hoverbuttontelephonet);
+  color: #7263ac;
+}
+.btntengah .ikut button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color: var(--buttonroket);
+  color: white;
+  border: none;
+  margin-left: 15px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.btntengah .ikut button:hover {
+  background-color: var(--hoverbuttonroket);
+  color: white;
+}
+.btntengah .vidio button:hover > i {
+  transform: rotate(176deg);
+}
+.btntengah .ikut button:hover > i {
+  transform: translate(5px, -5px);
+}
+.btntengah .ikut button i {
+  transition: all 0.5s;
+  margin-right: 5px;
+}
+.btntengah .vidio button i {
+  transition: all 0.5s;
+  margin-right: 5px;
+}
+.container-syarat {
+  background-color: #8270b242;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 70px 5%;/
+}
+
+.container-syarat .column-kanan,
+.container-syarat .column-kiri {
+  flex-basis: calc(
+    50% - 20px
+  ); /* Flex-basis dikurangi dengan total margin yang ingin ditambahkan */
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  margin: 10px; /* Margin diatur menjadi 5px */
+}
+.container-syarat .column-kiri {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: -1px 2px 10px 0.2px #7263ac;
+}
+
+.container-syarat .column-kiri h2 {
+  color: #7263ac;
+  font-family: "Poppins", sans-serif;
+}
+.container-syarat .column-kiri .text {
+  text-align: left;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+.container-syarat .column-kiri .text ol li {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.container-syarat .column-kanan {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: -1px 2px 10px 0.2px #7263ac;
+}
+.container-syarat .column-kanan h2 {
+  color: #7263ac;
+  font-family: "Poppins", sans-serif;
+}
+.container-syarat .column-kanan .text {
+  text-align: left;
+  padding: 0 20px;
+  padding-top: 20px;
+}
+.container-syarat .column-kanan .text ol li {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  font-weight: 500;
+}
+.container-syarat .column-kanan .text b {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-left: -17px;
+}
+
+.container-penilaian {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 40px 5%;
+}
+.container-penilaian h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 37px;
+}
+.container-penilaian .card {
+  margin-top: 30px;
+  padding: 20px 10%;
+  background-color: #a896c8;
+  box-shadow: 0px 10px 20px 0px #7263ac40;
+  border-radius: 45px;
+  text-align: left;
+  color: #ffffff;
+}
+.container-penilaian .card ol li {
+  padding: 10px 0;
+  margin-left: 20px;
+}
+.container-penilaian .row {
+  display: flex;
+  margin-top: 20px;
+}
+.container-penilaian .row .column-kiri {
+  width: 100%;
+}
+.container-penilaian .row .column-kiri .vidio {
+  background-color: #a896c8;
+  width: 100%;
+  height: auto;
+  border-radius: 25px 25px 0 0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.container-penilaian .row .column-kiri .vidio video {
+  border-radius: 25px 25px 0 0;
+  width: 100%;
+  height: auto;
+}
+.container-penilaian .row .column-kiri .vidio video:-webkit-full-screen {
+  border-radius: 0;
+}
+.container-penilaian .row .column-kiri .vidio video:-moz-full-screen {
+  border-radius: 0;
+}
+.container-penilaian .row .column-kiri .vidio video:-ms-fullscreen {
+  border-radius: 0;
+}
+.container-penilaian .row .column-kiri .vidio video:fullscreen {
+  border-radius: 0;
+}
+.container-penilaian .row .column-kiri .garisbawah {
+  background-color: #7263ac;
+  width: 100%;
+  height: 7px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.container-penilaian .row .column-kanan {
+  width: 100%;
+  margin-top: 30px;
+  height: 100%;
+  margin: auto 0;
+}
+.container-penilaian .row .column-kanan .garis {
+  width: 30%;
+  height: 3px;
+  background-color: #7263ac;
+  margin: 0 auto;
+}
+.container-penilaian .row .column-kanan p {
+  margin-top: 15px;
+  padding: 0 5%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.container-penilaian .row .column-kanan .button {
+  margin-top: 15px;
+}
+.container-penilaian .row .column-kanan .button .kontak button i {
+  margin-right: 5px;
+}
+.container-penilaian .row .column-kanan .button .lomba button i {
+  margin-right: 5px;
+}
+.container-penilaian .row .column-kanan .button .kontak button:hover > i {
+  transform: scale(1.1);
+}
+.container-penilaian .row .column-kanan .button .lomba button:hover > i {
+  transform: translate(5px, -5px);
+}
+.container-penilaian .row .column-kanan .button .kontak button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  color: #7263ac;
+  background-color: var(--buttontelephone);
+  border: none;
+  transition: 0.5s;
+}
+.container-penilaian .row .column-kanan .button .kontak button:hover {
+  color: #7263ac;
+  background-color: var(--hoverbuttontelephonet);
+}
+.container-penilaian .row .column-kanan .button .lomba button {
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color: var(--buttonroket);
+  border: none;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.container-penilaian .row .column-kanan .button .lomba button:hover {
+  background-color: var(--hoverbuttonroket);
+  color: #ffffff;
+}
+
+footer {
+  background-color: #8270b2;
+  padding: 6% 5%;
+}
+footer .card {
+  background-color: white;
+  border-radius: 50px;
+  display: flex;
+  padding: 30px 5%;
+}
+footer .card .column-kiri {
+  width: 100%;
+  margin-left: 30px;
+}
+footer .card .column-kiri h2 {
+  color: #7263ac;
+  padding-bottom: 10px;
+}
+footer .card .column-kiri .ikuti {
+  font-weight: 550;
+  margin-bottom: 40px;
+}
+footer .card .column-kiri .kontak {
+  margin: 40px 0;
+}
+footer .card .column-kiri .kontak p {
+  margin-top: 20px;
+  color: #000000;
+}
+footer .card .column-kiri .kontak p i {
+  color: #7263ac;
+}
+footer .card .column-kiri .terus {
+  color: black;
+}
+footer .card .column-kiri .sosmed {
+  display: flex;
+  gap: 20px;
+}
+footer .card .column-kiri .sosmed a i {
+  color: white;
+  background-color: #7263ac;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+footer .card .column-kiri .sosmed a i:hover {
+  background-color: var(--hoverbuttonroket);
+}
+footer .card .column-kanan {
+  width: 30%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+footer .card .column-kanan img {
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+footer .card .column-kanan .button a button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: var(--buttonroket);
+  color: white;
+  font-weight: 500;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+footer .card .column-kanan .button a button:hover {
+  background-color: var(--hoverbuttonroket);
+  transform: scale(1.1);
+}
+
+.bawah {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.bawah a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 30px;
+  color: #7263ac;
+}
+
+@media screen and (max-width: 975px) {
+  .container-syarat .column-kiri .text ol li {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+  .container-syarat .column-kanan .text ol li {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 18px;
+  }
+  .container-syarat .column-kanan .text b {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-left: -17px;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 785px) {
+  .container-syarat .column-kiri h2 {
+    color: #7263ac;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  .container-syarat .column-kiri h2 {
+    color: #7263ac;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+  }
+  .container-syarat .column-kiri .text ol li {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 10px;
+
+  }
+  .container-syarat .column-kanan .text ol li {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 10px;
+  }
+  .container-syarat .column-kanan .text b {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    margin-left: -17px;
+    font-size: 10px;
+  }
+  .container-syarat .column-kiri .text {
+    text-align: left;
+    padding: 0 20px;
+    padding-top: 5px;
+  }
+  .container-syarat .column-kanan .text {
+    text-align: left;
+    padding: 0 20px;
+    padding-top: 5px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .container-syarat .column-kanan,
+  .container-syarat .column-kiri {
+    flex-basis: 100%;
+  }
+  .container-penilaian .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-penilaian .row .column-kanan h2 {
+    margin-top: 20px;
+  }
+  footer .card {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .card .column-kanan img {
+    display: none;
+  }
+  .container-penilaian .card ol li {
+    font-size: 12px;
+  }
+  .bawah a {
+    font-size: 20px;
+  }
+  footer .card .column-kanan {
+    width: 100%;
+    text-align: center;
+  }
+  footer .card .column-kiri {
+    margin-left: 10px;
+  }
+  footer .card .column-kanan .button a button {
+    font-size: 15px;
+    width: 80%;
+    height: 40px;
+  }
+  .container-penilaian .row .column-kiri .vidio {
+    margin-left: -10px;
+  }
+  .container-penilaian .row .column-kiri .garisbawah {
+    margin-left: -10px;
+  }
+  .container-penilaian .row .column-kiri {
+    order: 2;
+  }
+  .container-penilaian .row .column-kanan {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  nav .logo span {
+    display: none;
+  }
+  nav .button {
+    margin-right: 10px;
+  }
+  nav .button .kontak {
+    margin-right: 5px;
+  }
+  nav .button .kontak button {
+    font-size: 12px;
+  }
+  nav .button .lomba button {
+    font-size: 12px;
+  }
+  footer .card .column-kiri h2 {
+    font-size: 17px;
+  }
+  footer .card .column-kiri .ikuti {
+    font-size: 12px;
+  }
+  .container-penilaian .row .column-kanan h2 {
+    font-size: 23px;
+  }
+  .container-penilaian .row .column-kanan p {
+    font-size: 13px;
+  }
+  .container-penilaian .card ol li {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 370px) {
+  nav .button .kontak button {
+    padding: 7px 18px;
+  }
+  nav .button .lomba button {
+    padding: 7px 18px;
+  }
+}
+@media screen and (max-width: 330px){
+   .container-syarat .column-kiri .text ol li {
+    font-family: "Poppins", sans-serif;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 8px;
+  }
+  .container-syarat .column-kanan .text ol li{
+    font-size: 8px;
+  }
+  .container-syarat .column-kanan .text b{
+    font-size: 8px;
+  }
+}

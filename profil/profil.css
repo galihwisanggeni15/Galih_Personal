@@ -1,0 +1,384 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container-profil {
+  padding: 20px 15%;
+}
+.container-profil .home {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 40px 0;
+}
+.container-profil .home a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #005ac8;
+}
+.container-profil .card {
+  display: flex;
+  width: 100%;
+}
+
+/* Left Column */
+.container-profil .card .left-column {
+  width: 25%;
+  color: white;
+  margin: 0 10px; /* Mengurangi margin */
+  border-radius: 10px 0 0 10px; /* Mengatur border-radius agar sejajar dengan right-column */
+  order: 1;
+}
+.container-profil .card .left-column .card {
+  flex-direction: column;
+}
+.container-profil .card .left-column .card .card-header {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #06b4fc 0%, #1296f4 100%);
+  border-radius: 10px 10px 0 0;
+}
+.container-profil .card .left-column .card .card-body {
+  width: 100%;
+  height: 320px;
+  border: 2px solid #3245e1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border-radius: 0 0 10px 10px; /* Mengatur border-radius */
+}
+.container-profil .card .left-column .card .card-body a {
+  text-decoration: none;
+  font-weight: 900;
+  color: #0ca6f9;
+  font-size: 23px;
+}
+.container-profil .card .left-column .card .card-body a:active {
+  color: #0e72a8;
+}
+
+/* Right Column */
+.container-profil .card .right-column {
+  width: 75%;
+  color: white;
+  margin: 0 10px; /* Mengurangi margin */
+  background-color: #ffffff;
+  border-radius: 0 10px 10px 0; /* Mengatur border-radius */
+  order: 2;
+}
+.container-profil .card .right-column .card {
+  flex-direction: column;
+}
+.container-profil .card .right-column .card .card-header {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #1393f4 0%, #3244e0 100%);
+  border-radius: 10px 10px 0 0;
+}
+.container-profil .card .right-column .card .card-body {
+  border: 2px solid #3245e1;
+  color: black;
+  border-radius: 0 0 10px 10px;
+}
+.container-profil .card .right-column .card .card-body form {
+  padding: 30px 20px;
+}
+.container-profil .card .right-column .card .card-body form .container-form {
+  display: flex;
+  justify-content: space-between; /* Mengatur jarak antara elemen secara merata */
+}
+.container-profil .card .right-column .card .card-body form .btn:hover {
+  background-color: #11967d;
+}
+.container-profil .card .right-column .card .card-body form .container-button {
+  display: flex;
+  justify-content: space-between;
+}
+.container-profil .card .right-column .card .card-body form .btn {
+  padding: 10px 15px;
+  border-radius: 6px;
+  background-color: #1bbea1;
+  border: none;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  color: white;
+  transition: all 0.5s;
+  text-align: right;
+  position: relative;
+}
+.container-profil .card .right-column .card .card-body form .left {
+  flex: 35%;
+  position: relative;
+  margin-right: 10px;
+  order: 1;
+}
+.file-input {
+  position: relative;
+  display: inline-block;
+  width: 90%; /* Atur lebar sesuai kebutuhan */
+  height: 90%; /* Atur tinggi sesuai kebutuhan */
+  border: 2px solid #005ac8;
+  border-radius: 10px;
+  overflow: hidden; /* Pastikan gambar tidak melebihi batas */
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+  position: relative;
+  margin-right: 10px;
+}
+
+.file-input img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Pastikan gambar selalu memenuhi area */
+}
+
+.file-input input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+}
+
+.container-profil .card .right-column .card .card-body form .right {
+  flex: 65%;
+  order: 2;
+}
+.container-profil
+  .card
+  .right-column
+  .card
+  .card-body
+  form
+  .right
+  .form-group
+  input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #2172ec;
+  padding: 5px 7px;
+  margin: 15px 0;
+  z-index: 2;
+  background-color: transparent;
+}
+.container-profil .card .right-column .card .card-body form .right .form-group {
+  position: relative;
+  z-index: 1;
+}
+.container-profil
+  .card
+  .right-column
+  .card
+  .card-body
+  form
+  .right
+  .form-group
+  .text {
+  position: absolute;
+  left: 0;
+  top: 6px;
+  z-index: 1;
+  transition: all 0.5s;
+  color: #aaaaaa;
+  font-size: 15px;
+}
+.container-profil
+  .card
+  .right-column
+  .card
+  .card-body
+  form
+  .right
+  .form-group
+  input:focus
+  + .text {
+  transform: translateY(-15px);
+}
+
+@media screen and (max-width: 770px) {
+  .container-profil {
+    padding: 20px 10%;
+  }
+  .container-profil .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-profil .card .left-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-profil .card .left-column .card {
+    flex-direction: row;
+  }
+  .container-profil .card .left-column .card .card-header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background: linear-gradient(90deg, #06b4fc 0%, #1296f4 100%);
+    border-radius: 10px 0 0 10px;
+  }
+  .container-profil .card .left-column .card .card-body {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3245e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+  }
+  .container-profil .card .left-column .card .card-body a {
+    font-weight: 900;
+    font-size: 16px;
+  }
+  .container-profil .card .right-column {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .container-profil .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-profil .home a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #005ac8;
+  }
+  .container-profil .card .left-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .container-profil .card .right-column {
+    width: 100%;
+  }
+
+  .container-profil .card .left-column .card {
+    flex-direction: row;
+  }
+  .container-profil .card .left-column .card .card-header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background: linear-gradient(90deg, #06b4fc 0%, #1296f4 100%);
+    border-radius: 10px 0 0 10px;
+  }
+  .container-profil .card .left-column .card .card-header h2 {
+    font-size: 15px;
+  }
+  .container-profil .card .left-column .card .card-body {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3245e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+  }
+  .container-profil .card .left-column .card .card-body a {
+    font-weight: 900;
+    font-size: 13px;
+  }
+  .container-profil .card .right-column {
+    width: 100%;
+  }
+  .container-profil .card .right-column .card .card-body form .container-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .file-input {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Atur lebar sesuai kebutuhan */
+    height: 100%; /* Atur tinggi sesuai kebutuhan */
+    border: 2px solid #005ac8;
+    border-radius: 10px;
+    overflow: hidden; /* Pastikan gambar tidak melebihi batas */
+    cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container-profil .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-profil .home a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #005ac8;
+  }
+  .container-profil .card .left-column {
+    width: 97%;
+    margin-bottom: 20px;
+  }
+  .container-profil .card .right-column {
+    width: 40%;
+  }
+
+  .container-profil .card .left-column .card {
+    flex-direction: row;
+  }
+  .container-profil .card .left-column .card .card-header {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    background: linear-gradient(90deg, #06b4fc 0%, #1296f4 100%);
+    border-radius: 10px 0 0 10px;
+  }
+  .container-profil .card .left-column .card .card-header h2 {
+    font-size: 12px;
+  }
+  .container-profil .card .left-column .card .card-body {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3245e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+  }
+  .container-profil .card .left-column .card .card-body a {
+    font-weight: 900;
+    font-size: 10px;
+  }
+  .container-profil .card .right-column {
+    width: 100%;
+  }
+  .container-profil .card .right-column .card .card-body form .container-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .file-input {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Atur lebar sesuai kebutuhan */
+    height: 100%; /* Atur tinggi sesuai kebutuhan */
+    border: 2px solid #005ac8;
+    border-radius: 10px;
+    overflow: hidden; /* Pastikan gambar tidak melebihi batas */
+    cursor: pointer; /* Ubah kursor menjadi pointer saat dihover */
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+}
